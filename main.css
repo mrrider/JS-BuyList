@@ -1,3 +1,227 @@
-h1 {
-    color: red;
+body{
+    background-color: #dcdcdc;
+    font-family: "Helvetica";
+}
+
+.container{
+    margin-top: 100px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.center{
+    background-color: bisque;
+    width: 90%;
+    margin: auto;
+    max-width: 1100px;
+}
+
+.cont{
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.left{
+    width: 65%;
+    float: left;
+}
+
+.right{
+    float: right;
+    width: 25%;
+}
+
+.itemName{
+    margin: 15px;
+    margin-right: 0;
+    float: left;
+    width: 75%;
+    padding: 15px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    border: none;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    -webkit-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.19);
+    -moz-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.19);
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.19);
+}
+
+.add{
+    cursor: pointer;
+    float: left;
+    width: 16.5%;
+    margin-top: 15px;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #ffffff;
+    background-color: #1f86d2;
+    padding: 15px;
+    font-size: 0.9em;
+    font-weight: 800;
+    -webkit-box-shadow: inset 0px -12px 0px -7px rgba(30,120,184,1);
+    -moz-box-shadow: inset 0px -12px 0px -7px rgba(30,120,184,1);
+    box-shadow: inset 0px -12px 0px -7px rgba(30,120,184,1);   
+}
+
+.add:hover{
+    background-color: #076fb8;
+}
+
+.item{
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid #dcdcdc;
+    font-size: 0.9em;
+}
+
+
+.itemLable{
+    float: left;
+    line-height: 20px;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.button{
+    float: left;
+}
+
+.centerButtons{
+    margin-top: 8px;
+    margin-left: 45%;
+    
+}
+
+.buttonDelete span{
+    margin-left: 13px;
+}
+
+.buttonDelete{
+    cursor: pointer;
+    color: white;
+    background-color: #f0a09f;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    -webkit-box-shadow: inset 0px -10px 0px -7px rgba(240,132,131,1);
+    -moz-box-shadow: inset 0px -10px 0px -7px rgba(240,132,131,1);
+    box-shadow: inset 0px -10px 0px -7px rgba(240,132,131,1);   
+}
+
+.buttonDelete:hover{
+    background-color: #f07776;
+}
+
+.buttonAdd span{
+    margin-left: 10px;
+}
+
+.buttonAdd{
+    cursor: pointer;
+    color: white;
+    background-color: #1ebc45;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    -webkit-box-shadow: inset 0px -10px 0px -7px rgba(22,164,66,1);
+    -moz-box-shadow: inset 0px -10px 0px -7px rgba(22,164,66,1);
+    box-shadow: inset 0px -10px 0px -7px rgba(22,164,66,1);  
+}
+
+.buttonAdd:hover{
+    background-color: #178f34;
+}
+
+.numberItem{
+    background-color: #eaeaea;
+    text-align: center;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    color: #5d5d5d;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.button span{
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    font-size: 1.6em;
+}
+
+.active{
+    background-color: #dd2929;
+    -webkit-box-shadow: inset 0px -10px 0px -7px rgba(192,40,41,1);
+    -moz-box-shadow: inset 0px -10px 0px -7px rgba(192,40,41,1);
+    box-shadow: inset 0px -10px 0px -7px rgba(192,40,41,1);
+}
+
+.buyButton{
+    cursor: pointer;
+    margin-left: 162px;
+    padding: 9px 13px;
+    float: left;
+    border: 1px solid #ddddde;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #616161;
+    background-color: #f7f7f7;
+    -webkit-box-shadow: inset 0px -10px 0px -7px rgba(208,208,210,1);
+    -moz-box-shadow: inset 0px -10px 0px -7px rgba(208,208,210,1);
+    box-shadow: inset 0px -10px 0px -7px rgba(208,208,210,1); 
+}
+
+.deleteItem{
+    font-size: 0.8em;
+    cursor: pointer;
+    background-color: #dd2929;
+    float: left;
+    padding-left: 12px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 12px;
+    border-radius: 4px;
+    margin-left: 5px;
+    color: white;
+    -webkit-box-shadow: inset 0px -10px 0px -7px rgba(192,40,41,1);
+    -moz-box-shadow: inset 0px -10px 0px -7px rgba(192,40,41,1);
+    box-shadow: inset 0px -10px 0px -7px rgba(192,40,41,1); 
+}
+
+.buyButton:hover{
+    background-color: #c3c3c5;
+}
+
+.deleteItem:hover{
+    background-color: #c02829;
+}
+
+.boughtButton{
+    display: none;
+}
+
+.boughtCount{
+    margin-left: 38px;
+}
+
+.notBuy{
+    margin-left: 214px;
+}
+
+.boughtLable{
+    text-decoration: line-through;
+}
+
+.rightLabel{
+    padding: 15px;
+    font-weight: 600;
+}
+
+.rightToBuy{
+    
 }

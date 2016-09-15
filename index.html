@@ -2,12 +2,59 @@
 <html>
 <head lang="uk">
     <meta charset="UTF-8">
-    <title>My Page</title>
+    <title>BuyList</title>
 
 
     <link rel="stylesheet" type="text/css" href="main.css" />
 </head>
 <body>
-<h1>Hello World</h1>
+<div class="container">
+    <div class="center">
+        <div class="cont left">
+            <input type="text" name="itemName" placeholder="Назва товару" class="itemName">
+            <button class="add">Додати</button>
+            <div class="item"> 
+                <p class="itemLable boughtLable">Помідори</p>
+                <div class="centerButtons">
+                    <div class="buttonDelete button boughtButton"><span>-</span></div>
+                    <div class="numberItem button boughtCount">2</div>
+                    <div class="buttonAdd button boughtButton"><span>+</span></div>
+                </div>
+                <button class="buyButton boughtButton">Куплено</button>
+                <button class="buyButton notBuy">Не куплено</button>
+                <div class="deleteItem boughtButton">x</div>
+                
+            </div>
+            <div class="item"> 
+                <p class="itemLable">Печиво</p>
+                <div class="centerButtons">
+                    <div class="buttonDelete button active"><span>-</span></div>
+                    <div class="numberItem button">2</div>
+                    <div class="buttonAdd button"><span>+</span></div>
+                </div>
+                <button class="buyButton">Куплено</button>
+                <div class="deleteItem">x</div>
+                
+            </div>
+            <div class="item"> 
+                <p class="itemLable">Сир</p>
+                <div class="centerButtons">
+                    <div class="buttonDelete button"><span>-</span></div>
+                    <div class="numberItem button">1</div>
+                    <div class="buttonAdd button"><span>+</span></div>
+                </div>
+                <button class="buyButton">Куплено</button>
+                <div class="deleteItem">x</div>
+                
+            </div>
+        </div>
+        <div class="cont right">
+            <div class="rightLabel">Залишилось</div>
+            <div class="rightToBuy">
+                <p class="rightToBuyLable" id="cookie1">Печиво<label for="cookie1">2</label></p>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
