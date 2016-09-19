@@ -29,6 +29,10 @@ body{
     width: 25%;
 }
 
+.nameBlock{
+    height: 80px;
+}
+
 .itemName{
     margin: 15px;
     margin-right: 0;
@@ -68,8 +72,9 @@ body{
 }
 
 .item{
+    margin-bottom: 10px;
     width: 100%;
-    overflow: hidden;
+    height: 40px;
     border-top: 1px solid #dcdcdc;
     font-size: 0.9em;
 }
@@ -291,6 +296,30 @@ body{
     font-weight: 600;
 }
 
+.tooltip::after{
+    font-size: 0.8em;
+    background: #af20d9;
+	border-radius: 8px;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	color: #FFF;
+	content: attr(data-tooltip);
+	margin-top: -40px;
+    margin-left: -35px;
+	opacity: 0;
+	padding: 6px 14px;
+	position: absolute;
+	visibility: hidden; 
+	transition: all 1s ease-in-out; 
+    transform: scale(0);
+    transform-origin: center bottom;
+}
+
+.tooltip:hover::after {
+	opacity: 1; 
+	visibility: visible;
+    transform:scale(1);
+}
+
 @media  (max-width: 1000px){
     .itemName{
         width: 70%;
@@ -307,5 +336,19 @@ body{
         width: 100%;
         margin-top: 25px;
         min-width: 450px;
+    }
+    
+    .item:last-child{
+        padding-bottom: 10px;
+    }
+}
+
+@media print{
+    .stickerName{
+        display: none;
+    }
+    
+    .sticker{
+        border: 1px solid #ae20d8;
     }
 }

@@ -11,41 +11,43 @@
 <div class="container">
     <div class="center">
         <div class="cont left">
-            <input type="text" name="itemName" placeholder="Назва товару" class="itemName">
-            <button class="add">Додати</button>
+            <div class="nameBlock">
+                <input type="text" name="itemName" placeholder="Назва товару" class="itemName">
+                <button class="add tooltip" data-tooltip="Add">Додати</button>
+            </div>
             <div class="item"> 
                 <p class="itemLable boughtLable">Помідори</p>
                 <div class="centerButtons">
-                    <div class="buttonDelete button boughtButton"><span>-</span></div>
+                    <div class="buttonDelete button boughtButton tooltip" data-tooltip="Minus"><span>-</span></div>
                     <div class="numberItem button boughtCount">2</div>
-                    <div class="buttonAdd button boughtButton"><span>+</span></div>
+                    <div class="buttonAdd button boughtButton tooltip" data-tooltip="Plus"><span>+</span></div>
                 </div>
-                <button class="buyButton boughtButton">Куплено</button>
-                <button class="buyButton notBuy">Не куплено</button>
-                <div class="deleteItem boughtButton">x</div>
+                <button class="buyButton boughtButton tooltip" data-tooltip="Bought">Куплено</button>
+                <button class="buyButton notBuy tooltip" data-tooltip="Not Bought">Не куплено</button>
+                <div class="deleteItem boughtButton tooltip" data-tooltip="Delete">x</div>
                 
             </div>
             <div class="item"> 
                 <p class="itemLable">Печиво</p>
                 <div class="centerButtons">
-                    <div class="buttonDelete button active"><span>-</span></div>
+                    <div class="buttonDelete button active tooltip" data-tooltip="Minus"><span>-</span></div>
                     <div class="numberItem button">2</div>
-                    <div class="buttonAdd button"><span>+</span></div>
+                    <div class="buttonAdd button tooltip" data-tooltip="Plus"><span>+</span></div>
                 </div>
-                <div class="deleteItem">x</div>
-                <button class="buyButton">Куплено</button>
+                <div class="deleteItem tooltip" data-tooltip="Delete">x</div>
+                <button class="buyButton tooltip" data-tooltip="Bought">Куплено</button>
                 
                 
             </div>
             <div class="item"> 
                 <p class="itemLable">Сир</p>
                 <div class="centerButtons">
-                    <div class="buttonDelete button"><span>-</span></div>
+                    <div class="buttonDelete button tooltip" data-tooltip="Minus"><span>-</span></div>
                     <div class="numberItem button">1</div>
-                    <div class="buttonAdd button"><span>+</span></div>
+                    <div class="buttonAdd button tooltip " data-tooltip="Plus"><span>+</span></div>
                 </div>
-                <div class="deleteItem">x</div>
-                <button class="buyButton">Куплено</button>
+                <div class="deleteItem tooltip" data-tooltip="Delete">x</div>
+                <button class="buyButton tooltip" data-tooltip="Bought">Куплено</button>
                 
                 
             </div>
