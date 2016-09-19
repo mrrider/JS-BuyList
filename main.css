@@ -90,8 +90,7 @@ body{
 
 .centerButtons{
     margin-top: 8px;
-    margin-left: 45%;
-    
+    margin-left: 40%;
 }
 
 .buttonDelete span{
@@ -162,9 +161,9 @@ body{
 
 .buyButton{
     cursor: pointer;
-    margin-left: 162px;
+    margin-right: 5px;
     padding: 9px 13px;
-    float: left;
+    float: right;
     border: 1px solid #ddddde;
     border-radius: 4px;
     font-size: 0.8em;
@@ -179,8 +178,9 @@ body{
 .deleteItem{
     font-size: 0.8em;
     cursor: pointer;
+    margin-right: 16px;
     background-color: #dd2929;
-    float: left;
+    float: right;
     padding-left: 12px;
     padding-top: 9px;
     padding-bottom: 9px;
@@ -210,7 +210,7 @@ body{
 }
 
 .notBuy{
-    margin-left: 214px;
+    margin-right: 16px;
 }
 
 .boughtLable{
@@ -222,6 +222,32 @@ body{
     font-weight: 600;
 }
 
-.rightToBuy{
-    
+.buyContainer{
+    padding-left: 10px;
+    padding-top: 6px;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    font-size: 0.7em;
+}
+
+.buyText{
+    display: inline-block;
+    background-color: #eaeaea;
+    color: #5d5d5d;
+    padding: 8px 12px;
+    margin-top: 4px;
+    border-radius: 4px;
+}
+
+.buyText:last-child{
+    margin-bottom: 10px;
+}
+
+.buyLable{
+    text-decoration: none;
+    background-color: #f4721c;
+    color: white;
+    margin-left: 5px;
+    padding: 3px 6px;
+    border-radius: 50%;
 }
